@@ -14,6 +14,7 @@ public enum Status
 public class NPCAgent : AIAgent
 {
     public Status status;
+    public GameObject itemToDrop;
 
     private void Update()
     {
@@ -25,6 +26,11 @@ public class NPCAgent : AIAgent
 
     public override void GotCaught()
     {
+        if (status == Status.Snatcher)
+        {
+            Instantiate(itemToDrop, transform.position, Quaternion.identity);
+        }
+
         base.GotCaught();
     }
 }

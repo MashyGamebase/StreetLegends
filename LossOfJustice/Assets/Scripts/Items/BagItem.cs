@@ -13,6 +13,11 @@ public class BagItem : ItemCollectible
         Visual();
     }
 
+    public override void OnTriggerEnter(Collider other)
+    {
+        base.OnTriggerEnter(other);
+    }
+
     void Visual()
     {
         transform.Rotate(0f, rotationSpeed * Time.deltaTime, 0f, Space.Self);
