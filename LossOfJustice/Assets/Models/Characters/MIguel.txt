@@ -1,0 +1,12 @@
+MIguel
+1-25 walk
+26 - 32 run
+33 - 65 idle
+66 - 80 faceright
+81 - 95 faceleft
+96 - 120 whistle
+121 - 150 pepper spray
+151 - 170 tasergun
+171 - 185 baton 
+186 - 211 taser
+212 - 230 ziptie

@@ -1,0 +1,13 @@
+NPC2
+1-25 walk
+26-32 run
+33-60 bumibili
+61-70 idle
+71-80 agree(head nod)
+81-95 looking left and right kung safe magnakaw
+96-130 commiting pickpocket
+131-150 gangsta walk
+151-170 commiting mugging
+171-230 commiting snatch
+231-240 got catch
+241-250 ziniziptie 
