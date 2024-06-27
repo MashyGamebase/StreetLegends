@@ -47,6 +47,10 @@ public class PlayerShooting : MonoBehaviour
                     hit.transform.gameObject.GetComponent<NPCAgent>().GotCaught();
                 }
             }
+            else if (hit.transform.gameObject.GetComponent<NPCBoss>())
+            {
+                hit.transform.gameObject.GetComponent<NPCBoss>().TakeDamage(1);
+            }
         }
     }
 

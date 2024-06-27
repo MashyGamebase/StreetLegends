@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -39,28 +40,16 @@ public class GameHandler : MonoBehaviour
 
     void UpdateHealthVisual()
     {
-        switch (playerHealth)
+        for (int i = 0; i < hearts.Count; i++)
         {
-            case 0:
-                hearts[2].sprite = emptyHeart;
-                hearts[1].sprite = emptyHeart;
-                hearts[0].sprite = emptyHeart;
-                break;
-            case 1:
-                hearts[2].sprite = emptyHeart;
-                hearts[1].sprite = emptyHeart;
-                hearts[0].sprite = fullHeart;
-                break;
-            case 2:
-                hearts[2].sprite = emptyHeart;
-                hearts[1].sprite = fullHeart;
-                hearts[0].sprite = fullHeart;
-                break;
-            case 3:
-                hearts[2].sprite = fullHeart;
-                hearts[1].sprite = fullHeart;
-                hearts[0].sprite = fullHeart;
-                break;
+            if (i < playerHealth)
+            {
+                hearts[i].sprite = fullHeart;
+            }
+            else
+            {
+                hearts[i].sprite = emptyHeart;
+            }
         }
     }
 
@@ -86,11 +75,11 @@ public class GameHandler : MonoBehaviour
 
     public void SetGameWin()
     {
-
+        FindObjectOfType<LeveLoadTrigger>().ManualLoadLevel();
     }
 
     public void SetGameLose()
     {
-
+        FindObjectOfType<LeveLoadTrigger>().RestartLevel();
     }
 }

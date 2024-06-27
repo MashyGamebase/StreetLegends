@@ -13,10 +13,12 @@ public abstract class AIAgent : MonoBehaviour
 
     [HideInInspector] public float timer;
 
+    /* Not Used anymore (only used in testing)
     public virtual void Move(Vector3 target)
     {
         agent.SetDestination(target);
     }
+    */
 
     public virtual void WanderBehaviour()
     {
@@ -55,7 +57,7 @@ public abstract class AIAgent : MonoBehaviour
     }
 
 
-    bool isAgentMoving()
+    public bool isAgentMoving()
     {
         return agent.pathPending || agent.remainingDistance > agent.stoppingDistance || agent.velocity.sqrMagnitude > 0.1f;
     }

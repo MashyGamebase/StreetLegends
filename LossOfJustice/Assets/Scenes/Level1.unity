@@ -123,6 +123,75 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &8138087
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 379634477629255728, guid: ff92edca7bad52e45a07db1996b3ad27, type: 3}
+      propertyPath: levelToLoad
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 386856624395112475, guid: ff92edca7bad52e45a07db1996b3ad27, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.026
+      objectReference: {fileID: 0}
+    - target: {fileID: 386856624395112475, guid: ff92edca7bad52e45a07db1996b3ad27, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.239
+      objectReference: {fileID: 0}
+    - target: {fileID: 386856624395112475, guid: ff92edca7bad52e45a07db1996b3ad27, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 386856624395112475, guid: ff92edca7bad52e45a07db1996b3ad27, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 386856624395112475, guid: ff92edca7bad52e45a07db1996b3ad27, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 386856624395112475, guid: ff92edca7bad52e45a07db1996b3ad27, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 386856624395112475, guid: ff92edca7bad52e45a07db1996b3ad27, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 386856624395112475, guid: ff92edca7bad52e45a07db1996b3ad27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 386856624395112475, guid: ff92edca7bad52e45a07db1996b3ad27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 386856624395112475, guid: ff92edca7bad52e45a07db1996b3ad27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2436935906099299907, guid: ff92edca7bad52e45a07db1996b3ad27, type: 3}
+      propertyPath: m_Name
+      value: LevelLoadTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109888049184034810, guid: ff92edca7bad52e45a07db1996b3ad27, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109888049184034810, guid: ff92edca7bad52e45a07db1996b3ad27, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ff92edca7bad52e45a07db1996b3ad27, type: 3}
 --- !u!1001 &43738813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1485,11 +1554,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3118855006245660264, guid: a73310cca6bd4ab4291234e5c7b57b30, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 3e-45
+      value: -1e-45
       objectReference: {fileID: 0}
     - target: {fileID: 3118855006245660264, guid: a73310cca6bd4ab4291234e5c7b57b30, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1e-45
+      value: -3e-45
       objectReference: {fileID: 0}
     - target: {fileID: 6196804446185225466, guid: a73310cca6bd4ab4291234e5c7b57b30, type: 3}
       propertyPath: m_LocalRotation.y
@@ -2230,7 +2299,6 @@ MonoBehaviour:
   range: 100
   input: {fileID: 1288569720}
   player: {fileID: 1288569719}
-  fireValue: 0
   cam: {fileID: 1349798508}
 --- !u!65 &1320350586
 BoxCollider:
@@ -93828,3 +93896,4 @@ SceneRoots:
   - {fileID: 2082413047}
   - {fileID: 866016937}
   - {fileID: 593454677}
+  - {fileID: 8138087}
