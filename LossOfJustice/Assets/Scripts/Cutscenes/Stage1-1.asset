@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 891a9f21be6f5064e81992fc30168b8e, type: 3}
+  m_Name: Stage1-1
+  m_EditorClassIdentifier: 
+  Dialog:
+  - In a peaceful community, a shadow of crime looms ever closer. But amidst the
+    darkness, one man's resolve shines bright.
+  - For Miguel, the pain of loss is all too real. A cherished possession, stolen.
+    A family member, devastated.
+  - Determined to protect his community and prevent others from suffering, Miguel
+    dedicates himself to rigorous training.
+  - In honor of his loved one's experience, Miguel becomes a guardian for his community.
+    A protector. A hero.
+  - "Hi i am Miguel, your partner in \nthis game. Lets go have some Fun.\n"
+  speaker:
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - Miguel
+  showSpeaker: 0000000001

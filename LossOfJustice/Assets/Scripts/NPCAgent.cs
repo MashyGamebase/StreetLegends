@@ -16,12 +16,27 @@ public class NPCAgent : AIAgent
     public Status status;
     public GameObject itemToDrop;
 
+    public GameObject alertInfo;
+    public float _dRadius = 0.4f;
+
+    public bool isDetected = false;
+
     private void Update()
     {
         if (status == Status.Innocent || status == Status.Criminal || status == Status.Snatcher)
         {
             WanderBehaviour();
-        }  
+        }
+
+        // If Detected
+        if (isDetected)
+        {
+            alertInfo.SetActive(true);
+        }
+        else if(!isDetected)
+        {
+            alertInfo.SetActive(false);
+        }
     }
 
     public override void GotCaught()

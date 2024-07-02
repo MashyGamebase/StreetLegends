@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 891a9f21be6f5064e81992fc30168b8e, type: 3}
+  m_Name: Stage2-1
+  m_EditorClassIdentifier: 
+  Dialog:
+  - Chaos ensues as the criminals scatter, trying to escape Miguel. The boss, now
+    looking desperate, shouts orders to his gang.
+  - 'This ain''t over!
+
+    Retreat to the seaside!'
+  - 'The muggers retreat, the player in close pursuit.
+
+    The Mugger Leader pulls
+    out a phone and dials a number.'
+  - '(on the phone) Boss, we got a problem.
+
+    Someone''s takin'' us down, one
+    by one.'
+  - 'The hunt continues.
+
+    The seaside awaits.'
+  speaker:
+  - ' '
+  - NPC 4
+  - 
+  - NPC 4
+  - MIGUEL
+  showSpeaker: 0001000101
+  speakerImages: []

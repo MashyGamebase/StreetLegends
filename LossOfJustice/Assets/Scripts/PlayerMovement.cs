@@ -36,6 +36,12 @@ public class PlayerMovement : MonoBehaviour
     // Weapons to Use
     public int levelWeapon;
 
+    // Audio
+    public List<AudioClip> sounds;
+    public AudioSource audioSource;
+
+    public AudioSource walkSound, runSound;
+
     public void OnMove(InputValue value)
     {
         _move = value.Get<Vector2>();
@@ -67,6 +73,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         CursorControl();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void CursorControl()
@@ -122,16 +129,24 @@ public class PlayerMovement : MonoBehaviour
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref _turnSmoothVelocity, _turnSmoothTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
-
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             if(_sprintValue == 1f)
             {
+                walkSound.enabled = false;
+                runSound.enabled = true;
                 controller.Move(moveDir.normalized * (_moveSpeed * 2f) * Time.deltaTime);
             }
             else if(_sprintValue != 1f)
             {
+                walkSound.enabled = true;
+                runSound.enabled = false;
                 controller.Move(moveDir.normalized * _moveSpeed * Time.deltaTime);
             }
+        }
+        else
+        {
+            walkSound.enabled = false;
+            runSound.enabled = false;
         }
 
         if (aimValue == 1)

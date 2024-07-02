@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 891a9f21be6f5064e81992fc30168b8e, type: 3}
+  m_Name: Stage3-1
+  m_EditorClassIdentifier: 
+  Dialog:
+  - The old warehouse, The Boss, a towering figure with an intimidating presence,
+    stands in the middle of the room, flanked by his snatchers.
+  - So, you're the one causing all this trouble. I must admit you've got guts.
+  - It's over.
+  - 'Over?
+
+    This is just the beginning.'
+  - The final showdonw awaits. it's time to bring an end to this reign of terror.
+  speaker:
+  - 
+  - BOSS
+  - MIGUEL
+  - BOSS
+  - 
+  showSpeaker: 0001010100
+  speakerImages: []

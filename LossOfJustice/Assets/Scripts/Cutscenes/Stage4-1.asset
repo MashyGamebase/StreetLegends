@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 891a9f21be6f5064e81992fc30168b8e, type: 3}
+  m_Name: Stage4-1
+  m_EditorClassIdentifier: 
+  Dialog:
+  - Miguel, your bravery and determination have not gone unnoticed.
+  - You have not only thwarted the criminals but restored hope to thise who have
+    felt the grip of fear.
+  - Your actions exemplify the best of our community.
+  - Thank you Senator.
+  - "Well that's all I guess. \nThank you for being part of our game."
+  speaker:
+  - GOOD SENATOR
+  - GOOD SENATOR
+  - GOOD SENATOR
+  - MIGUEL
+  - MIGUEL
+  showSpeaker: 0101010101
+  speakerImages: []

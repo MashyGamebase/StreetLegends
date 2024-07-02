@@ -62,11 +62,13 @@ public class PlayerShooting : MonoBehaviour
             {
                 case 0: // Whistle
                     player.anim.SetTrigger("useWhistle");
+                    player.audioSource.PlayOneShot(player.sounds[0]);
                     break;
                 case 1: // Pepper Spray
                     player.anim.SetTrigger("usePSpray");
                     break;
                 case 2: // Taser
+                    player.audioSource.PlayOneShot(player.sounds[1]);
                     player.anim.SetTrigger("useTaser");
                     break;
                 case 3: // ??

@@ -8,6 +8,8 @@ using UnityEngine.UI;
 public class GameHandler : MonoBehaviour
 {
     public StageObjectives stageObjectives;
+    public GameObject cutsceneHolder;
+    public GameObject character;
 
     public static GameHandler instance;
 
@@ -59,8 +61,15 @@ public class GameHandler : MonoBehaviour
 
         if(stageObjectives.currentGoals >= stageObjectives.levelGoalObjective)
         {
-            SetGameWin();
+            cutsceneHolder.SetActive(true);
+            character.SetActive(false);
         }
+    }
+
+    public void ManualShowDialogSequence()
+    {
+        cutsceneHolder.SetActive(true);
+        character.SetActive(false);
     }
 
     public void UpdateHealth(int amount)

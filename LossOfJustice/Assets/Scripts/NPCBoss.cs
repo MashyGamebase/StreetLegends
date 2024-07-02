@@ -37,7 +37,7 @@ public class NPCBoss : AIAgent
     public override void GotCaught()
     {
         // Might be useful to add additional parameters
-        GameHandler.instance.SetGameWin();
+        GameHandler.instance.ManualShowDialogSequence();
         base.GotCaught();
     }
 
