@@ -28,4 +28,9 @@ MonoBehaviour:
   - BOSS
   - 
   showSpeaker: 0001010100
-  speakerImages: []
+  speakerImages:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 7c965a98fddeb5b4abf37cdf28d67e00, type: 3}
+  - {fileID: 21300000, guid: a005b71e97d498442ace073152ece142, type: 3}
+  - {fileID: 21300000, guid: 7c965a98fddeb5b4abf37cdf28d67e00, type: 3}
+  - {fileID: 0}

@@ -26,4 +26,9 @@ MonoBehaviour:
   - MIGUEL
   - MIGUEL
   showSpeaker: 0101010101
-  speakerImages: []
+  speakerImages:
+  - {fileID: 21300000, guid: 08acd055e038b2347ab6ca2b669becce, type: 3}
+  - {fileID: 21300000, guid: 08acd055e038b2347ab6ca2b669becce, type: 3}
+  - {fileID: 21300000, guid: 08acd055e038b2347ab6ca2b669becce, type: 3}
+  - {fileID: 21300000, guid: a005b71e97d498442ace073152ece142, type: 3}
+  - {fileID: 21300000, guid: a005b71e97d498442ace073152ece142, type: 3}

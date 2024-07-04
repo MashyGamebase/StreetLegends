@@ -36,4 +36,9 @@ MonoBehaviour:
   - NPC 4
   - MIGUEL
   showSpeaker: 0001000101
-  speakerImages: []
+  speakerImages:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: fe7606492b4c7c047b1de9785f62b77c, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: fe7606492b4c7c047b1de9785f62b77c, type: 3}
+  - {fileID: 21300000, guid: a005b71e97d498442ace073152ece142, type: 3}

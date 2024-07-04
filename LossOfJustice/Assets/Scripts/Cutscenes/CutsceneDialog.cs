@@ -13,5 +13,5 @@ public class CutsceneDialog : ScriptableObject
 
     public List<bool> showSpeaker;
 
-    public List<Image> speakerImages;
+    public List<Sprite> speakerImages;
 }

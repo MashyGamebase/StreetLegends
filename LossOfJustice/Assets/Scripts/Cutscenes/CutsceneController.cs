@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class CutsceneController : MonoBehaviour
 {
     public CutsceneDialog dialogData;
 
     public TextMeshProUGUI dialogText, speakerText;
+
+    public Image characterImageHolder;
 
     public int currentSequence = 0;
 
@@ -27,6 +30,7 @@ public class CutsceneController : MonoBehaviour
     public void DisplayNextDialog()
     {
         onHideSpeaker.Invoke();
+
         if(currentSequence >= dialogData.Dialog.Count)
         {
             EndDialog();
@@ -38,6 +42,10 @@ public class CutsceneController : MonoBehaviour
         if (dialogData.showSpeaker[currentSequence])
         {
             onShowSpeaker.Invoke();
+            if (dialogData.speakerImages[currentSequence] != null)
+            {
+                characterImageHolder.sprite = dialogData.speakerImages[currentSequence];
+            }
         }
 
         currentSequence++;
